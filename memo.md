@@ -129,3 +129,25 @@ miyakz@gns3:~$ sudo apt install python3-pyqt5.qtwebsockets
 
 
 
+miyakz@gns3:~$ sudo apt install  gcc cmake
+git clone https://github.com/GNS3/dynamips.git
+
+miyakz@gns3:~/dynamips$ sudo apt install libelf-dev 
+
+cd dynamips
+cmake .
+make
+
+miyakz@gns3:~/dynamips/stable$ ls dynamips 
+dynamips
+miyakz@gns3:~/dynamips/stable$ pwd
+/home/miyakz/dynamips/stable
+miyakz@gns3:~/dynamips/stable$ 
+
+miyakz@gns3:~/dynamips/stable$ sudo apt install gnome-terminal
+
+gnome-terminalは起動しなかったが、GNS3を起動しているホストで以下を実行すると、ルータに入ることができた。
+
+telnet localhost 5000
+
+
